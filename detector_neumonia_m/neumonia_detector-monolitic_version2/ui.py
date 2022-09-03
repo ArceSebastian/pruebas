@@ -73,7 +73,7 @@ class App:
         self.button3 = ttk.Button(self.root, text="Borrar", command=bc.delete)
         self.button4 = ttk.Button(self.root, text="PDF", command=bc.create_pdf)
         self.button6 = ttk.Button(
-            self.root, text="Guardar", command=self.save_results_csv
+            self.root, text="Guardar", command=bc.save_results_csv
         )
 
         #   WIDGETS POSITIONS
