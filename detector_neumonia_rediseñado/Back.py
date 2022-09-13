@@ -1,6 +1,6 @@
 
 import getpass
-import ui
+import UI
 from tkinter import filedialog
 import tkcap
 from PIL import ImageTk, Image
