@@ -52,15 +52,15 @@ class App:
 
         #   BUTTONS
         self.button1 = ttk.Button(
-            self.root, text="Predecir", state="disabled", command=backe.run_model
+            self.root, text="Predecir", state="disabled", command=self.backe.run_model()
         )
         self.button2 = ttk.Button(
-            self.root, text="Cargar Imagen", command=backe.load_img_file
+            self.root, text="Cargar Imagen", command=self.backe.load_img_file
         )
-        self.button3 = ttk.Button(self.root, text="Borrar", command=backe.delete)
-        self.button4 = ttk.Button(self.root, text="PDF", command=backe.create_pdf)
+        self.button3 = ttk.Button(self.root, text="Borrar", command=self.backe.delete)
+        self.button4 = ttk.Button(self.root, text="PDF", command=self.backe.create_pdf)
         self.button6 = ttk.Button(
-            self.root, text="Guardar", command=backe.save_results_csv
+            self.root, text="Guardar", command=self.backe.save_results_csv
         )
 
         #   WIDGETS POSITIONS
