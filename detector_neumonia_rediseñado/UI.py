@@ -8,7 +8,7 @@ import PIL
 import numpy as np
 import tensorflow as tf
 import pydicom as dicom
-from back import backe
+from Back import backe
 from inference import infer
 
 class App:
@@ -94,7 +94,7 @@ class App:
         self.root.mainloop()
 
 def main():
-    inference = infer
+    inference = infer()
     my_app = App()
     return 0
 
