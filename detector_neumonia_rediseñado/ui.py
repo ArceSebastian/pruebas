@@ -8,7 +8,6 @@ import PIL
 import numpy as np
 import tensorflow as tf
 import pydicom as dicom
-import back as bc
 from back import backe
 from inference import infer
 
