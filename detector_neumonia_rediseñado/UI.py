@@ -8,8 +8,8 @@ import PIL
 import numpy as np
 import tensorflow as tf
 import pydicom as dicom
-from Back import backe
-from inference import infer
+from Back import *
+from inference import *
 
 class App:
     def __init__(self):
