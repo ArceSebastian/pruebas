@@ -12,7 +12,7 @@ tf.compat.v1.disable_eager_execution()
 tf.compat.v1.experimental.output_all_intermediates(True)
 import cv2
 
-class infe:
+class infer:
     def model_fun():
         model_cnn = tf.keras.models.load_model('WilhemNet_86.h5')
         return model_cnn
