@@ -1,6 +1,6 @@
 
 
-import back
+import Back
 from PIL import ImageTk, Image
 import numpy as np
 import tensorflow as tf
