@@ -18,21 +18,20 @@ class backe:
     def load_img_file(self):
         filepath = filedialog.askopenfilename(
             initialdir="/",
-            title="Select image",   
-            filetypes=(
-                ("DICOM", "*.dcm"),
+            title="Select image",
+            filetypes=(                
                 ("JPEG", "*.jpeg"),
                 ("jpg files", "*.jpg"),
                 ("png files", "*.png"),
-                ),
-            )
+                ("DICOM", "*.dcm"),
+            ),
+        )
         if filepath:
-        
-    
-            self.array, img2show = infer.read_jpg_file(filepath)
-            img1 = img2show.resize((250, 250), PIL.Image.ANTIALIAS)
-            img1 = ImageTk.PhotoImage(img1)
-            return img1
+            self.array, img2show = Backend.read_jpg_file(filepath)
+            self.img1 = img2show.resize((250, 250), Image.ANTIALIAS)
+            self.img1 = ImageTk.PhotoImage(self.img1)
+            self.text_img1.image_create(END, image=self.img1)
+            self.button1["state"] = "enabled"
 
     def run_model(self):
             self.label, self.proba, self.heatmap = infer.predict(self.array)
