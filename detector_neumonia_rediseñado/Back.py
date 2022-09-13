@@ -1,6 +1,6 @@
 
 import getpass
-import UI
+from UI import *
 from tkinter import filedialog
 import tkcap
 from PIL import ImageTk, Image
@@ -8,7 +8,7 @@ import img2pdf
 import pydicom as dicom
 import cv2
 import csv
-from inference import infer
+from inference import *
 
 #   METHODS
 
